@@ -190,7 +190,10 @@ h1, h2, h3, h4 { margin: 0; }
 /* ---------- HERO ---------- */
 .hero { background: var(--ink); color: var(--surface); padding: 56px 0 88px; }
 .hero-inner {
-  display: block;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+  align-items: start;
 }
 .hero-copy .tag-label { color: var(--accent); }
 .hero-questions {
@@ -228,7 +231,7 @@ h1, h2, h3, h4 { margin: 0; }
   margin: 0 0 28px;
   max-width: 460px;
 }
-.hero-media--inline { width: 220px; margin: 28px 0; }
+.hero-media { width: 100%; }
 .hero-frame { border: 1px solid var(--line-dark); padding: 10px; }
 .hero-frame img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 10%; }
 
@@ -479,7 +482,8 @@ h1, h2, h3, h4 { margin: 0; }
 @media (max-width: 960px) {
   .main-nav { display: none; }
   .container { padding: 0 24px; }
-  .hero-media--inline { width: 160px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-media { max-width: 240px; margin: 0 0 28px; order: -1; }
   .hero-title { font-size: 38px; }
   .essay-question { font-size: 32px; text-align: center; margin: 0 auto; }
   .essay-top { margin-bottom: 56px; }
