@@ -33,20 +33,15 @@ function handleSubmit(form, event) {
     return;
   }
 
+  // Valid: let the form submit to SmartEmailing, which redirects to /thank-you/
   form.classList.remove('invalid');
-
-  if (note) {
-    note.textContent = `Thanks, ${name}! Please check your email inbox to confirm.`;
-    note.classList.remove('error');
-    note.classList.add('success');
-  }
-
-  // Let the form submit to Mailchimp (opens in a new tab via target="_blank"),
-  // then clear the fields on this page once the browser has read them.
-  setTimeout(() => form.reset(), 600);
 }
 
 document.querySelectorAll('form.waitlist-form').forEach((form) => {
+  // SmartEmailing records which page the signup came from
+  const referrer = form.querySelector('[data-se-referrer]');
+  if (referrer) referrer.value = document.URL;
+
   form.addEventListener('submit', (e) => {
     handleSubmit(form, e);
   });
