@@ -456,6 +456,59 @@ h1, h2, h3, h4 { margin: 0; }
 .voices-list li:last-child { border-bottom: 1px solid var(--line-dark); }
 .quote-glyph { color: var(--accent); font-family: var(--font-heading); font-weight: 900; margin-right: 4px; }
 
+/* ---------- FAQ ---------- */
+.faq { padding: 96px 0; background: var(--surface); }
+.faq-inner { max-width: 820px; }
+.faq-title {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 40px;
+}
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 24px 48px 24px 0;
+  font-family: var(--font-heading-narrow);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq-item summary:hover { color: var(--accent-deep); }
+.faq-item summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.faq-item p,
+.faq-item ul {
+  margin: 0 0 24px;
+  max-width: 680px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--supporting-dark);
+}
+.faq-item ul { list-style: none; padding: 0; }
+.faq-item li { position: relative; padding-left: 26px; margin-bottom: 6px; }
+.faq-item li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
+.faq-item a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+
 /* ---------- FINALE / CTA ---------- */
 .cta-section { position: relative; }
 .cta-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 160px; }
@@ -534,6 +587,10 @@ h1, h2, h3, h4 { margin: 0; }
   .voices-media { max-width: 320px; }
   .waitlist-form { flex-direction: column; }
   .np-line { font-size: 22px; }
+  .faq { padding: 64px 0; }
+  .faq-title { font-size: 28px; margin-bottom: 28px; }
+  .faq-item summary { font-size: 18px; padding: 20px 40px 20px 0; }
+  .faq-item p, .faq-item ul { font-size: 16px; }
   .cta-split { grid-template-columns: 1fr; min-height: auto; }
   .cta-half { padding: 28px 24px; }
   .cta-word { font-size: clamp(30px, 12vw, 56px); }

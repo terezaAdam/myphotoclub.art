@@ -54,6 +54,7 @@ document.querySelectorAll('form.waitlist-form').forEach((form) => {
     '.essay-eyebrow', '.essay-questions li', '.essay-question',
     '.community-title', '.community-lead', '.community-list li',
     '.belonging-inner .np-line', '.belonging-lead',
+    '.faq-title', '.faq-item',
     '.cta-word', '.cta-create', '.cta-sub', '.np-line--small'
   ];
 
