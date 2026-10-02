@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Consent Mode v2 defaults: must run before GTM -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=localStorage.getItem('mpc_consent');}catch(e){}
+var s=c==='granted'?'granted':'denied';
+gtag('consent','default',{ad_storage:s,ad_user_data:s,ad_personalization:s,analytics_storage:s,wait_for_update:500});})();
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -14,7 +21,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Archivo+Narrow:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=13">
+<meta name="description" content="My Photo Club is a members' club for passionate amateur photographers: monthly challenges, honest feedback on your work and practical courses. No likes race, no algorithm. Founding doors open 17 November.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://myphotoclub.art/">
+<meta property="og:title" content="My Photo Club: photography is better together">
+<meta property="og:description" content="A members' club for passionate amateur photographers. Monthly challenges, honest feedback, practical courses. 100 founding spots, doors open 17 November.">
+<meta property="og:image" content="https://myphotoclub.art/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/mpc-logo-mark.png">
+<link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -41,11 +58,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="hero-rule"></div>
 
-        <p class="hero-lead">Share your work with people who are passionate about photography.
-          Discover photographers from around the world and build real connections beyond
-          the algorithm.</p>
+        <p class="hero-lead">A members' club for passionate amateur photographers. Monthly challenges,
+          honest feedback on your work, practical courses, and people who actually look at your photos.</p>
 
         <p class="calling-label">— CALLING FOUNDING MEMBERS —</p>
+        <p class="founding-offer"><strong>€4.99/month</strong>, locked in for founding members · <strong>100 spots</strong> · Doors open <strong>17&nbsp;November</strong></p>
 
         <form action="https://app.smartemailing.cz/public/web-forms-v2/display-form/696398-qbzz0gvlrqfsnov3qmaz330orb4lyc0ts9ywlldx9g8cag2803dhpxb764vvzbn1oh3yb4wv30zexoavu1uvty5e6c39ah9sw18w" method="post" id="se-webform-1" class="waitlist-form" data-waitlist-form novalidate>
           <label for="se-name-1" class="sr-only">Your first name</label>
@@ -56,14 +73,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="hidden" name="sessionid" value="">
           <input type="hidden" name="sessionUid" value="">
           <input type="hidden" name="_do" value="webFormHtmlRenderer-webFormForm-submit">
-          <button type="submit" name="_submit" value="JOIN THE WAITLIST" class="btn btn-solid">Join the waitlist</button>
+          <button type="submit" name="_submit" value="JOIN THE WAITLIST" class="btn btn-solid">Save my founding spot</button>
         </form>
-        <p class="form-note" id="formNote">Be one of the first to know when the club opens.</p>
+        <p class="form-note" id="formNote">Free to join. The founding price is for the waitlist only. No spam, unsubscribe anytime. <a href="privacy/" class="form-note-link">Privacy policy</a></p>
       </div>
 
       <div class="hero-media">
         <div class="hero-frame">
-          <img src="assets/pics/photographer-camera.jpg" alt="A photographer looking through her camera">
+          <img src="assets/pics/photographer-camera-web.jpg" width="1000" height="1639" alt="A photographer looking through her camera">
         </div>
         <p class="dash-label">— ONE OF US —</p>
       </div>
@@ -91,7 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container community-inner">
       <div class="community-media">
         <div class="community-frame">
-          <img src="assets/pics/pic.png" alt="A club member exploring the city with her camera">
+          <img src="assets/pics/community-web.jpg" width="900" height="1124" loading="lazy" alt="A club member exploring the city with her camera">
         </div>
       </div>
 
@@ -99,11 +116,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="tag-label">MY PHOTO CLUB</p>
         <h2 class="community-title">JOIN US TODAY</h2>
         <ul class="community-list community-list--single">
-          <li>take part in monthly photography challenges</li>
-          <li>connect with photographers from around the world</li>
-          <li>share the stories behind your photographs</li>
-          <li>get practical courses</li>
-          <li>and much more</li>
+          <li>a monthly photo challenge with a theme, a deadline and a showcase of the best work</li>
+          <li>honest, kind feedback on your photos from fellow members</li>
+          <li>practical courses in your own member dashboard</li>
+          <li>the stories behind the photos: member interviews and behind-the-shot breakdowns</li>
+          <li>founding members get in first: the first course and challenge are ready on day one</li>
         </ul>
 
         <form action="https://app.smartemailing.cz/public/web-forms-v2/display-form/696398-qbzz0gvlrqfsnov3qmaz330orb4lyc0ts9ywlldx9g8cag2803dhpxb764vvzbn1oh3yb4wv30zexoavu1uvty5e6c39ah9sw18w" method="post" id="se-webform-2" class="waitlist-form waitlist-form--community" data-waitlist-form novalidate>
@@ -115,16 +132,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="hidden" name="sessionid" value="">
           <input type="hidden" name="sessionUid" value="">
           <input type="hidden" name="_do" value="webFormHtmlRenderer-webFormForm-submit">
-          <button type="submit" name="_submit" value="JOIN THE WAITLIST" class="btn btn-solid">Join the waitlist</button>
+          <button type="submit" name="_submit" value="JOIN THE WAITLIST" class="btn btn-solid">Save my founding spot</button>
         </form>
-        <p class="form-note form-note--dark" data-form-note>Be one of the first to know when the club opens.</p>
+        <p class="form-note form-note--dark" data-form-note>Free to join. The founding price is for the waitlist only. No spam, unsubscribe anytime. <a href="privacy/" class="form-note-link">Privacy policy</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER — trust: a real person behind the club -->
+  <section id="founder" class="founder">
+    <div class="container founder-inner">
+      <div class="founder-copy">
+        <p class="tag-label tag-label--accent">THE FOUNDER</p>
+        <h2 class="founder-title">HI, I'M TEREZA.</h2>
+        <p class="founder-text">I'm a street photographer from Prague, and I almost stopped sharing my work
+          because of the numbers. For a long time I believed that the number of likes measured my talent.</p>
+        <p class="founder-text">It doesn't. So I'm building the club I wished I'd had back then: a place where
+          photographs are seen, talked about and made better, together.</p>
+        <a class="founder-link" href="https://www.instagram.com/terezaphoto_/" target="_blank" rel="noopener">Follow my work → @terezaphoto_</a>
+      </div>
+      <div class="founder-media">
+        <div class="community-frame">
+          <img src="assets/pics/founder-tereza.jpg" width="900" height="1350" loading="lazy" alt="Tereza, founder of My Photo Club, holding her camera in Prague's Old Town">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- BELONGING — triplet, dark, real street portrait -->
   <section class="belonging">
-    <div class="belonging-bg" style="background-image:url('assets/pics/portrait-bw-01.jpg')"></div>
+    <div class="belonging-bg" style="background-image:url('assets/pics/portrait-bw-01-web.jpg')"></div>
     <div class="belonging-overlay"></div>
     <div class="container belonging-inner">
       <p class="np-line np-line--light">You don't have to be a professional.</p>
@@ -144,23 +181,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="faq-list">
         <details class="faq-item">
           <summary>When does My Photo Club launch?</summary>
-          <p>Join the waitlist and you'll be one of the first to know when the club opens.</p>
+          <p>Founding doors open on 17 November, for people on the waitlist first. There are only 100 founding spots.</p>
         </details>
         <details class="faq-item">
-          <summary>Is My Photo Club free?</summary>
-          <p>Membership will be affordable, so anyone can join, and what you'll find inside, will be worth far more than the price. Simply put, you'll get much more than you pay.</p>
+          <summary>How much does it cost?</summary>
+          <p>Founding members pay €4.99/month, and that price stays locked in for as long as you remain a member. After the founding round, membership will be €7.99/month, with an annual plan that gives you one month free.</p>
         </details>
         <details class="faq-item">
-          <summary>How do I join the waitlist?</summary>
-          <p>Fill in <a href="#waitlist-cta">the form</a> with your first name and email. You will receive an email as soon as the club opens.</p>
+          <summary>When will I be charged?</summary>
+          <p>Only if you decide to join when the doors open. Joining the waitlist is free and doesn't commit you to anything.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I cancel anytime?</summary>
+          <p>Yes. You can cancel anytime from your member dashboard.</p>
         </details>
         <details class="faq-item">
           <summary>What will I find in the club?</summary>
-          <p>Monthly photography challenges, community of photographers, practical courses, interviews and much more.</p>
+          <p>A monthly photo challenge, honest feedback on your photos, practical courses in your member dashboard, member interviews and behind-the-shot stories. Founding members get the first course and challenge from day one.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How is this different from Instagram?</summary>
+          <p>There's no likes race and no algorithm deciding who sees your work. Your photos are seen by people who care about photography, and the feedback is about the craft, not the numbers.</p>
         </details>
         <details class="faq-item">
           <summary>Who is the club for?</summary>
           <p>For anyone who loves photography, whether you're just starting out or already more experienced.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need a professional camera?</summary>
+          <p>No. Any camera works, and so does a phone, as long as you take photography seriously.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I join the waitlist?</summary>
+          <p>Fill in <a href="#waitlist-cta">the form</a> with your first name and email. You'll get an email as soon as the founding doors open.</p>
         </details>
       </div>
     </div>
@@ -196,9 +249,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <input type="hidden" name="sessionid" value="">
         <input type="hidden" name="sessionUid" value="">
         <input type="hidden" name="_do" value="webFormHtmlRenderer-webFormForm-submit">
-        <button type="submit" name="_submit" value="JOIN THE WAITLIST" class="btn btn-solid">Join the waitlist</button>
+        <button type="submit" name="_submit" value="JOIN THE WAITLIST" class="btn btn-solid">Save my founding spot</button>
       </form>
-      <p class="form-note" data-form-note>Be one of the first to know when the club opens.</p>
+      <p class="form-note form-note--dark" data-form-note>Free to join. The founding price is for the waitlist only. No spam, unsubscribe anytime. <a href="privacy/" class="form-note-link">Privacy policy</a></p>
     </div>
   </section>
 </main>
@@ -206,10 +259,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer class="site-footer">
   <div class="container footer-inner">
     <span class="logo-text logo-text--footer">MPC</span>
-    <p>&copy; 2026 My Photo Club. All rights reserved.</p>
+    <p><a href="privacy/" class="footer-link">Privacy</a> · <a href="#" class="footer-link" data-cookie-settings>Cookie settings</a> · <a href="https://www.instagram.com/myphotoclub.art/" target="_blank" rel="noopener" class="footer-link">Instagram</a> · &copy; 2026 My Photo Club<br><span class="footer-imprint">Operated by Mgr. Tereza Adámková, IČO 17789028</span></p>
   </div>
 </footer>
 
 <script src="script.js?v=6"></script>
+<script src="consent.js?v=1" data-root=""></script>
 </body>
 </html>

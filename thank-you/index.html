@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Consent Mode v2 defaults: must run before GTM -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=localStorage.getItem('mpc_consent');}catch(e){}
+var s=c==='granted'?'granted':'denied';
+gtag('consent','default',{ad_storage:s,ad_user_data:s,ad_personalization:s,analytics_storage:s,wait_for_update:500});})();
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -15,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Archivo+Narrow:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css?v=12">
+<link rel="stylesheet" href="../styles.css?v=15">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -43,8 +50,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ol class="thanks-steps">
         <li><span class="thanks-num">01</span>Check your inbox (and the spam or promotions folder, just in case).</li>
         <li><span class="thanks-num">02</span>Click the confirmation link in the email.</li>
-        <li><span class="thanks-num">03</span>Get ready to share, connect and create with us.</li>
+        <li><span class="thanks-num">03</span>Founding doors open on 17 November. You'll hear from me first.</li>
       </ol>
+
+      <p class="thanks-ask">One question while you wait: <strong>what do you love photographing, and what frustrates you about sharing it online?</strong> Just reply to my welcome email. I read every answer.</p>
+
+      <p class="thanks-ask">Meanwhile, come and say hi on Instagram: <a href="https://www.instagram.com/myphotoclub.art/" target="_blank" rel="noopener" class="footer-link">@myphotoclub.art</a></p>
 
       <a href="../" class="btn btn-outline">Back to My Photo Club</a>
     </div>
@@ -54,9 +65,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer class="site-footer">
   <div class="container footer-inner">
     <span class="logo-text logo-text--footer">MPC</span>
-    <p>&copy; 2026 My Photo Club. All rights reserved.</p>
+    <p><a href="../privacy/" class="footer-link">Privacy</a> · <a href="#" class="footer-link" data-cookie-settings>Cookie settings</a> · <a href="https://www.instagram.com/myphotoclub.art/" target="_blank" rel="noopener" class="footer-link">Instagram</a> · &copy; 2026 My Photo Club<br><span class="footer-imprint">Operated by Mgr. Tereza Adámková, IČO 17789028</span></p>
   </div>
 </footer>
 
+<script src="../consent.js?v=1" data-root="../"></script>
 </body>
 </html>
