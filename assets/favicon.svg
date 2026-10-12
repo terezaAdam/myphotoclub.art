@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460">
+  <style>
+    .back { stroke: #1c1c1e; }
+    .front { stroke: #d5723a; }
+    @media (prefers-color-scheme: dark) { .back { stroke: #f5f2ee; } }
+  </style>
+  <g fill="none" stroke-width="33">
+    <rect class="back" x="16.5" y="16.5" width="334" height="334"/>
+    <rect class="front" x="109.5" y="109.5" width="334" height="334"/>
+    <!-- interlock: the back frame passes over the front one at the top-right crossing -->
+    <path class="back" d="M350.5 93v33"/>
+  </g>
+</svg>
